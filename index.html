@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFCT0109 - Seguridad Informática | Índice del Curso</title>
+    <style>
+        /* Estilos CSS actualizados siguiendo la línea visual de la Distroteca */
+        :root {
+            --primary: #0056b3;
+            --secondary: #28a745;
+            --accent: #dc3545;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        h2.section-title {
+            color: var(--text);
+            font-size: 1.8rem;
+            border-left: 8px solid var(--secondary);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .course-outline {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 25px;
+        }
+
+        .module {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .module h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: var(--primary);
+            padding-right: 20px;
+        }
+
+        .unit-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .unit-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .unit-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .access-link {
+            display: inline-block;
+            white-space: nowrap;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 6px 15px;
+            border: 2px solid var(--accent);
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .access-link:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            background: #f1f5f9;
+            margin-top: 60px;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .module-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .access-link {
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <h1>IFCT0109 Seguridad Informática</h1>
+    </header>
+
+    <main>
+        <p class="intro">Bienvenido al curso de Seguridad Informática. Este índice contiene la estructura completa del temario. Utiliza los botones de acceso para consultar la documentación técnica de cada módulo.</p>
+        
+        <h2 class="section-title">Contenidos del Curso por Módulos</h2>
+        
+        <ul class="course-outline">
+            
+            <li class="module">
+                <div class="module-header">
+                    <h2>Módulo 1: MF0486_3 Seguridad en equipos informáticos</h2>
+                    <a href="MF0486/MF0486.html" class="access-link">Acceso MF0486</a>
+                </div>
+                <ul class="unit-list">
+                    <li>UD 1. Criterios generales sobre seguridad</li>
+                    <li>UD 2. Análisis de impacto de negocio</li>
+                    <li>UD 3. Gestión de riesgos</li>
+                    <li>UD 4. Plan de implantación de seguridad</li>
+                    <li>UD 5. Protección de datos de carácter personal</li>
+                    <li>UD 6. Seguridad física y lógica de sistemas</li>
+                    <li>UD 7. Identificación de servicios</li>
+                    <li>UD 8. Robustecimiento de sistemas</li>
+                    <li>UD 9. Implantación de cortafuegos</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Módulo 2: MF0487_3 Auditoría de seguridad informática</h2>
+                    <a href="MF0487/MF0487.html" class="access-link">Acceso MF0487</a>
+                </div>
+                <ul class="unit-list">
+                    <li>UD 1. Criterios generales sobre auditoría informática</li>
+                    <li>UD 2. Normativa de protección de datos</li>
+                    <li>UD 3. Análisis de riesgos de sistemas de información</li>
+                    <li>UD 4. Herramientas para la auditoría de sistemas</li>
+                    <li>UD 5. Cortafuegos en auditorías de sistemas</li>
+                    <li>UD 6. Guías para la ejecución de fases de auditoría</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Módulo 3: MF0488_3 Gestión de incidentes de seguridad</h2>
+                    <a href="MF0488/MF0488.html" class="access-link">Acceso MF0488</a>
+                </div>
+                <ul class="unit-list">
+                    <li>UD 1. Sistemas de detección y prevención (IDS/IPS)</li>
+                    <li>UD 2. Implantación de sistemas IDS/IPS</li>
+                    <li>UD 3. Control de código malicioso</li>
+                    <li>UD 4. Respuesta ante incidentes de seguridad</li>
+                    <li>UD 5. Gestión de intentos de intrusión</li>
+                    <li>UD 6. Análisis forense informático</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Módulo 4: MF0489_3 Sistemas seguros de acceso y datos</h2>
+                    <a href="MF0489/MF0489.html" class="access-link">Acceso MF0489</a>
+                </div>
+                <ul class="unit-list">
+                    <li>UD 1. Criptografía</li>
+                    <li>UD 2. Infraestructura de clave pública (PKI)</li>
+                    <li>UD 3. Comunicaciones seguras</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Módulo 5: MF0490_3 Gestión de servicios en el sistema</h2>
+                    <a href="MF0490/MF0490.html" class="access-link">Acceso MF0490</a>
+                </div>
+                <ul class="unit-list">
+                    <li>UD 1. Gestión de la seguridad y normativas</li>
+                    <li>UD 2. Análisis de procesos de sistemas</li>
+                    <li>UD 3. Sistemas de almacenamiento</li>
+                    <li>UD 4. Métricas e indicadores de monitorización</li>
+                    <li>UD 5. Proceso de monitorización y comunicaciones</li>
+                    <li>UD 6. Selección del sistema de registro</li>
+                    <li>UD 7. Administración del control de accesos</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Proyectos y Documentación Adicional</h2>
+                    <a href="proyectos/proyectos.html" class="access-link">Acceso Proyectos</a>
+                </div>
+                <ul class="unit-list">
+                    <li>Recursos de apoyo, estudios de caso y documentación de proyectos.</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Recursos Software</h2>
+                    <a href="software/software.html" class="access-link">Acceso Software</a>
+                </div>
+                <ul class="unit-list">
+                    <li>Software, Sistemas Operativos y Máquinas Preconfiguradas.</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Entrenamiento y Juegos</h2>
+                    <a href="juegos.html" class="access-link">Acceso Juegos</a>
+                </div>
+                <ul class="unit-list">
+                    <li>Desafíos interactivos, CTFs y actividades lúdicas.</li>
+                </ul>
+            </li>
+
+            <li class="module">
+                <div class="module-header">
+                    <h2>Toolkit de Seguridad</h2>
+                    <a href="herramientas.html" class="access-link">Acceso Herramientas</a>
+                </div>
+                <ul class="unit-list">
+                    <li>Arsenal de herramientas para auditoría y utilidades forenses.</li>
+                </ul>
+            </li>
+
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IFCT0109 Seguridad Informática.© www.unfantasmaenelsistema.com Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

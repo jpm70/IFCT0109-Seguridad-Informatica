@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Mando - Galería de Juegos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0d1117; 
+            color: #00ff00; 
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            border: 1px solid #00ff0033; 
+            box-shadow: 0 0 20px #00ff0044; 
+            background-color: #0d1117;
+        }
+        .terminal-header {
+            background-color: #161b22;
+            color: #ffffff;
+            font-weight: bold;
+            border-bottom: 1px solid #00ff0033;
+        }
+        .game-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            transition: all 0.3s ease;
+        }
+        .game-card:hover {
+            border-color: #00ff00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+        }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body class="flex items-center justify-center">
+
+    <div class="container w-full max-w-4xl rounded-lg overflow-hidden">
+        <div class="terminal-header p-4 flex justify-between items-center">
+            <span>DIRECTORIO_DE_OPERACIONES.sh</span>
+            <div class="space-x-1">
+                <span class="inline-block w-3 h-3 bg-red-500 rounded-full"></span>
+                <span class="inline-block w-3 h-3 bg-yellow-500 rounded-full"></span>
+                <span class="inline-block w-3 h-3 bg-green-500 rounded-full"></span>
+            </div>
+        </div>
+
+        <div class="p-8">
+            <h1 class="text-3xl font-bold mb-2 text-white">Listado de Juegos</h1>
+            <p class="text-cyan-400 mb-8 border-b border-gray-700 pb-4">Selecciona un módulo de entrenamiento activo:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <a href="https://jpm70.github.io/QuienDijoQue/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">¿Quién dijo la frase? 🎙️</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/Pasapalabra/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">Panel de Roscos educativos 📺</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/Trivial-IT/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">Trivial-IT 🧀</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/CiberEscape/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">CyberEscape- Escaperoom CTF ☣️</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/Phishing-Homografico/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">Test de Phishing Homográfico 🔡</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/FlagBuilder/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">Generador de Retos CTF 🔂</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/HackSandbox/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">Sandbox de Retos de Hacking 🕹️</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/CODIGO-CAOS/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">CÓDIGO CAOS 🏴‍☠️</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+                <a href="https://jpm70.github.io/Los-Pollos-Hermanos-Breaking-Server/" target="_blank" class="game-card p-4 rounded-md flex items-center justify-between group">
+                    <span class="text-white group-hover:text-green-400">Los Pollos Hermanos CTF 🐔</span>
+                    <span class="text-xs text-gray-500">OPEN ></span>
+                </a>
+
+            </div>
+
+            <div class="mt-10 text-center border-t border-gray-800 pt-6">
+                <p class="text-xs text-gray-500">SISTEMA OPERATIVO SEGURO v2.0.25 - ACCESO AUTORIZADO</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
