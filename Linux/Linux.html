@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux - Hoja de ruta</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --term-green: #33ff33;
+            --term-dim: #228822;
+            --accent: #00ff41;
+            --font-main: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--term-green);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid var(--term-dim);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(51, 255, 51, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--term-green);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            padding: 10px;
+            border-left: 3px solid var(--term-dim);
+            background: rgba(51, 255, 51, 0.05);
+        }
+
+        .quote {
+            font-style: italic;
+            color: var(--accent);
+            display: block;
+        }
+
+        .author {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .prompt {
+            color: #fff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .prompt::before {
+            content: "root@linux-repo:~# ";
+        }
+
+        /* Efecto de Cursor Parpadeante */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: var(--term-green);
+            margin-left: 5px;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px 5px;
+            border-bottom: 1px solid #1a1a1a;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background-color: rgba(51, 255, 51, 0.1);
+        }
+
+        a {
+            color: var(--term-green);
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .file-info {
+            font-size: 0.85em;
+            color: var(--term-dim);
+            margin-right: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: var(--term-dim);
+            text-align: center;
+            border-top: 1px solid var(--term-dim);
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Linux - Hoja de ruta</h1>
+
+    <header>
+        <span class="quote">"Si haces sistemas operativos pensando que los usuarios son tontos, solo los tontos usarán tu sistema operativo."</span>
+        <span class="author">— Eric S. Raymond</span>
+    </header>
+
+    <div class="prompt">ls -la ./hoja_de_ruta/<span class="cursor"></span></div>
+
+    <ul>
+        <li><a href="Linux/00 Introducción.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 00 Introducción.pdf</a></li>
+        <li><a href="Linux/01 Kali Linux Esencial para Ciberseguridad.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 01 Kali Linux Esencial para Ciberseguridad.png</a></li>
+        <li><a href="Linux/02 Redes VirtualBox Guía Maestra Completa.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 02 Redes VirtualBox Guía Maestra Completa.png</a></li>
+        <li><a href="Linux/03 Ubuntu VirtualBox Despliegue Técnico.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 03 Ubuntu VirtualBox Despliegue Técnico.pdf</a></li>
+        <li><a href="Linux/04 Actualizar Linux por Terminal.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 04 Actualizar Linux por Terminal.png</a></li>
+        <li><a href="Linux/05 Actualiza Kali Linux Método Correcto.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 05 Actualiza Kali Linux Método Correcto.png</a></li>
+        <li><a href="Linux/06 Estructura Directorios Linux.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 06 Estructura Directorios Linux.png</a></li>
+        <li><a href="Linux/07 Carpetas Linux Virtuales o Físicas.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 07 Carpetas Linux Virtuales o Físicas.png</a></li>
+        <li><a href="Linux/08 Directorios Críticos Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 08 Directorios Críticos Linux.pdf</a></li>
+        <li><a href="Linux/09 Dominando La Terminal Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 09 Dominando La Terminal Linux.pdf</a></li>
+        <li><a href="Linux/10 Dominando ls Guía Técnica.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 10 Dominando ls Guía Técnica.pdf</a></li>
+        <li><a href="Linux/11 Control de Acceso Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 11 Control de Acceso Linux.pdf</a></li>
+        <li><a href="Linux/12 Usuarios Permisos y Poder en Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 12 Usuarios Permisos y Poder en Linux.pdf</a></li>
+        <li><a href="Linux/13 Data Mastery on Linux Files Forensics Security.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 13 Data Mastery on Linux Files Forensics Security.pdf</a></li>
+        <li><a href="Linux/14 Dominando el Flujo de Datos en Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 14 Dominando el Flujo de Datos en Linux.pdf</a></li>
+        <li><a href="Linux/15 Linux Archivos Ciberseguridad y Forensia.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 15 Linux Archivos Ciberseguridad y Forensia.pdf</a></li>
+        <li><a href="Linux/16 Linux Terminal Mastery.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 16 Linux Terminal Mastery.pdf</a></li>
+        <li><a href="Linux/17 Linux Redes Maestría.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 17 Linux Redes Maestría.pdf</a></li>
+        <li><a href="Linux/18 Habilidades Esenciales del SysAdmin Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 18 Habilidades Esenciales del SysAdmin Linux.pdf</a></li>
+        <li><a href="Linux/19 Control de Procesos Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 19 Control de Procesos Linux.pdf</a></li>
+        <li><a href="Linux/20 Linux Process And Service Control.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 20 Linux Process And Service Control.pdf</a></li>
+        <li><a href="Linux/21 Systemd Automatización de Respaldos.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 21 Systemd Automatización de Respaldos.pdf</a></li>
+        <li><a href="Linux/22 Cron Crontab Automatización Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 22 Cron Crontab Automatización Linux.pdf</a></li>
+        <li><a href="Linux/23 Escalada de Privilegios Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 23 Escalada de Privilegios Linux.pdf</a></li>
+        <li><a href="Linux/24 Linux Privilege Escalation Field Guide.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 24 Linux Privilege Escalation Field Guide.pdf</a></li>
+        <li><a href="Linux/25 Defensa Automatizada con Fail2Ban.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 25 Defensa Automatizada con Fail2Ban.pdf</a></li>
+        <li><a href="Linux/26 Lynis Auditoría Interna de Sistemas.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 26 Lynis Auditoría Interna de Sistemas.pdf</a></li>
+        <li><a href="Linux/27 Snort3 Construyendo la Fortaleza Digital.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 27 Snort3 Construyendo la Fortaleza Digital.pdf</a></li>
+        <li><a href="Linux/28 Wazuh Seguridad Unificada XDR SIEM.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 28 Wazuh Seguridad Unificada XDR SIEM.pdf</a></li>
+        <li><a href="Linux/29 Señales Intrusión Linux.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 29 Señales Intrusión Linux.pdf</a></li>
+        <li><a href="Linux/30 Comandos peligrosos Linux y prevención.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 30 Comandos peligrosos Linux y prevención.png</a></li>
+        <li><a href="Linux/31 Blindaje Linux Manual de Campo.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 31 Blindaje Linux Manual de Campo.pdf</a></li>
+        <li><a href="Linux/32 Shell Scripting sh, bash y Shebang.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 32 Shell Scripting sh, bash y Shebang.png</a></li>
+        <li><a href="Linux/33 Arreglar Error Arranque VM Ubuntu.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 33 Arreglar Error Arranque VM Ubuntu.png</a></li>
+        <li><a href="Linux/34 Domina el Arranque de Linux con systemd-analyze.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 34 Domina el Arranque de Linux con systemd-analyze.png</a></li>
+        <li><a href="Linux/35 Seguridad Linux Protegiendo GRUB.png" target="_blank"><span class="file-info">[-rw-r--r--]</span> 35 Seguridad Linux Protegiendo GRUB.png</a></li>
+        <li><a href="Linux/36 Integridad Digital Hashing Aplicado.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 36 Integridad Digital Hashing Aplicado.pdf</a></li>
+        <li><a href="Linux/37 Shell Interactiva El Protocolo Completo.pdf" target="_blank"><span class="file-info">[-rwxr-xr-x]</span> 37 Shell Interactiva El Protocolo Completo.pdf</a></li>
+    </ul>
+
+    <footer>
+        [ Terminado: 38 objetos listados ]
+    </footer>
+</div>
+
+</body>
+</html>
