@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio Completo de Ciberseguridad</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --secondary: #3498db;
+            --bg: #f4f7f6;
+            --text: #2c3e50;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: auto; }
+        h1 { text-align: center; color: var(--primary); border-bottom: 4px solid var(--secondary); padding-bottom: 10px; }
+        .category-title { 
+            background: var(--primary); 
+            color: white; 
+            padding: 12px 20px; 
+            border-radius: 5px; 
+            margin-top: 40px; 
+            font-size: 1.5em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--secondary);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .card a { color: var(--secondary); text-decoration: none; font-weight: bold; word-break: break-all; }
+        .card .desc { font-size: 0.85em; color: #555; margin: 8px 0; line-height: 1.4; }
+        .card .source-tag { font-size: 0.7em; color: #999; font-style: italic; align-self: flex-end; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Repositorio de Herramientas y Aprendizaje</h1>
+
+    <div class="category-title">OSINT e Inteligencia</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://osint-ui.com/">OSINT UI</a>
+            [cite_start]<p class="desc">Interfaz visual para herramientas de inteligencia de fuentes abiertas[cite: 14].</p>
+            <span class="source-tag">Fuente 14</span>
+        </div>
+        <div class="card">
+            <a href="https://geospy.ai/">GeoSpy AI</a>
+            [cite_start]<p class="desc">IA para la localización geográfica de imágenes[cite: 19].</p>
+            <span class="source-tag">Fuente 19</span>
+        </div>
+        <div class="card">
+            <a href="https://gmail-osint.activetk.jp/">Gmail OSINT</a>
+            [cite_start]<p class="desc">Investigación de perfiles basada en correos Gmail[cite: 17].</p>
+            <span class="source-tag">Fuente 17</span>
+        </div>
+        <div class="card">
+            <a href="https://usersearch.ai/m/auth/login">UserSearch AI</a>
+            [cite_start]<p class="desc">Buscador de usuarios con inteligencia artificial[cite: 18].</p>
+            <span class="source-tag">Fuente 18</span>
+        </div>
+        <div class="card">
+            <a href="https://osintisnotacrime.com/">OSINT is not a crime</a>
+            [cite_start]<p class="desc">Directorio masivo de recursos para investigadores[cite: 39].</p>
+            <span class="source-tag">Fuente 39</span>
+        </div>
+        <div class="card">
+            <a href="https://usercheck.oscarzulu.org/">UserCheck</a>
+            [cite_start]<p class="desc">Verificación de disponibilidad de nombres de usuario[cite: 40].</p>
+            <span class="source-tag">Fuente 40</span>
+        </div>
+        <div class="card">
+            <a href="http://osintcat.ru/">OSINT Cat</a>
+            [cite_start]<p class="desc">Recursos rusos especializados en inteligencia[cite: 46].</p>
+            <span class="source-tag">Fuente 46</span>
+        </div>
+        <div class="card">
+            <a href="https://ekky19.github.io/osint/">Ekky19 OSINT</a>
+            [cite_start]<p class="desc">Recopilación de métodos y herramientas OSINT[cite: 47].</p>
+            <span class="source-tag">Fuente 47</span>
+        </div>
+        <div class="card">
+            <a href="https://osint.link/#leak">OSINT Link (Leaks)</a>
+            [cite_start]<p class="desc">Directorio de enlaces sobre filtraciones de datos[cite: 48].</p>
+            <span class="source-tag">Fuente 48</span>
+        </div>
+        <div class="card">
+            <a href="https://usersearch.org/">UserSearch Org</a>
+            [cite_start]<p class="desc">Búsqueda de usuarios en redes sociales y foros[cite: 49].</p>
+            <span class="source-tag">Fuente 49</span>
+        </div>
+        <div class="card">
+            <a href="https://aprs.fi/">APRS.fi</a>
+            [cite_start]<p class="desc">Seguimiento de estaciones de radio y posicionamiento[cite: 50].</p>
+            <span class="source-tag">Fuente 50</span>
+        </div>
+        <div class="card">
+            <a href="https://carbondate.cs.odu.edu/">Carbon Date</a>
+            [cite_start]<p class="desc">Herramienta para estimar la fecha de creación de una web[cite: 58].</p>
+            <span class="source-tag">Fuente 58</span>
+        </div>
+        <div class="card">
+            <a href="https://mapabalizasv16.es/">Mapa Balizas</a>
+            [cite_start]<p class="desc">Mapa de localización de balizas y señales[cite: 61].</p>
+            <span class="source-tag">Fuente 61</span>
+        </div>
+        <div class="card">
+            <a href="https://web-check.xyz/">Web-Check</a>
+            [cite_start]<p class="desc">Análisis exhaustivo de infraestructura de un dominio[cite: 67].</p>
+            <span class="source-tag">Fuente 67</span>
+        </div>
+    </div>
+
+    <div class="category-title">Formación, CTF y Wargames</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://overthewire.org/wargames/bandit/">Bandit (OverTheWire)</a>
+            [cite_start]<p class="desc">Wargame básico para aprender Linux[cite: 25].</p>
+            <span class="source-tag">Fuente 25</span>
+        </div>
+        <div class="card">
+            <a href="https://pwnable.xyz/challenges/">Pwnable.xyz</a>
+            [cite_start]<p class="desc">Desafíos de explotación de binarios[cite: 8].</p>
+            <span class="source-tag">Fuente 8</span>
+        </div>
+        <div class="card">
+            <a href="https://capturetheflag.withgoogle.com/">Google CTF</a>
+            [cite_start]<p class="desc">Plataforma oficial de retos de Google[cite: 10].</p>
+            <span class="source-tag">Fuente 10</span>
+        </div>
+        <div class="card">
+            <a href="https://mystery.knightlab.com/">SQL Murder Mystery</a>
+            [cite_start]<p class="desc">Investigación criminal usando SQL[cite: 12].</p>
+            <span class="source-tag">Fuente 12</span>
+        </div>
+        <div class="card">
+            <a href="https://cryptohack.org/">CryptoHack</a>
+            [cite_start]<p class="desc">Aprende criptografía mediante retos[cite: 54].</p>
+            <span class="source-tag">Fuente 54</span>
+        </div>
+        <div class="card">
+            <a href="https://www.hackertest.net/">HackerTest</a>
+            [cite_start]<p class="desc">Pruebas online de habilidades de hacking[cite: 6].</p>
+            <span class="source-tag">Fuente 6</span>
+        </div>
+        <div class="card">
+            <a href="https://hacksplaining.com/lessons">Hacksplaining</a>
+            [cite_start]<p class="desc">Lecciones interactivas de vulnerabilidades web[cite: 11].</p>
+            <span class="source-tag">Fuente 11</span>
+        </div>
+        <div class="card">
+            <a href="https://beinternetawesome.withgoogle.com/es_es/interland">Interland</a>
+            [cite_start]<p class="desc">Seguridad digital lúdica para niños (Google)[cite: 21].</p>
+            <span class="source-tag">Fuente 21</span>
+        </div>
+        <div class="card">
+            <a href="https://www.certifiedsecure.com/frontpage">Certified Secure</a>
+            [cite_start]<p class="desc">Plataforma de entrenamiento en seguridad[cite: 53].</p>
+            <span class="source-tag">Fuente 53</span>
+        </div>
+        <div class="card">
+            <a href="https://araintel.com/ctf/">AraIntel CTF</a>
+            [cite_start]<p class="desc">Plataforma de retos de inteligencia[cite: 66].</p>
+            <span class="source-tag">Fuente 66</span>
+        </div>
+        <div class="card">
+            <a href="https://dockerlabs.es/">DockerLabs</a>
+            [cite_start]<p class="desc">Laboratorios de hacking en entornos Docker[cite: 30].</p>
+            <span class="source-tag">Fuente 30</span>
+        </div>
+        <div class="card">
+            <a href="https://thehackerslabs.com/">The Hackers Labs</a>
+            [cite_start]<p class="desc">Laboratorios prácticos de ciberseguridad[cite: 34].</p>
+            <span class="source-tag">Fuente 34</span>
+        </div>
+    </div>
+
+    <div class="category-title">Linux y Línea de Comandos</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://cmdchallenge.com/">CMD Challenge</a>
+            [cite_start]<p class="desc">Desafíos de terminal (Enlace duplicado)[cite: 9, 27].</p>
+            <span class="source-tag">Fuentes 9/27</span>
+        </div>
+        <div class="card">
+            <a href="https://linuxsurvival.com/">Linux Survival</a>
+            [cite_start]<p class="desc">Aprende Linux en el navegador[cite: 23].</p>
+            <span class="source-tag">Fuente 23</span>
+        </div>
+        <div class="card">
+            <a href="https://labex.io/linuxjourney">Linux Journey</a>
+            [cite_start]<p class="desc">Ruta de aprendizaje completa de Linux[cite: 24].</p>
+            <span class="source-tag">Fuente 24</span>
+        </div>
+        <div class="card">
+            <a href="https://explainshell.com/">Explain Shell</a>
+            [cite_start]<p class="desc">Explicación visual de comandos[cite: 26].</p>
+            <span class="source-tag">Fuente 26</span>
+        </div>
+        <div class="card">
+            <a href="https://distrosea.com/es/">DistroSea</a>
+            [cite_start]<p class="desc">Prueba distribuciones Linux online[cite: 22].</p>
+            <span class="source-tag">Fuente 22</span>
+        </div>
+        <div class="card">
+            <a href="https://webvm.io/">WebVM</a>
+            [cite_start]<p class="desc">Máquina virtual Linux cliente-side[cite: 73].</p>
+            <span class="source-tag">Fuente 73</span>
+        </div>
+    </div>
+
+    <div class="category-title">Herramientas Técnicas y Utilidades</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://gchq.github.io/CyberChef/">CyberChef</a>
+            [cite_start]<p class="desc">Herramienta de manipulación de datos[cite: 31].</p>
+            <span class="source-tag">Fuente 31</span>
+        </div>
+        <div class="card">
+            <a href="https://www.revshells.com/">Reverse Shell Generator</a>
+            [cite_start]<p class="desc">Generador interactivo de shells inversas[cite: 29].</p>
+            <span class="source-tag">Fuente 29</span>
+        </div>
+        <div class="card">
+            <a href="https://gtfobins.github.io/">GTFOBins</a>
+            [cite_start]<p class="desc">Binarios para escalar privilegios[cite: 28].</p>
+            <span class="source-tag">Fuente 28</span>
+        </div>
+        <div class="card">
+            <a href="https://sqlitebrowser.org/">SQLite Browser</a>
+            [cite_start]<p class="desc">Gestor visual para bases de datos SQLite[cite: 5].</p>
+            <span class="source-tag">Fuente 5</span>
+        </div>
+        <div class="card">
+            <a href="https://obfuscator.io/">JS Obfuscator</a>
+            [cite_start]<p class="desc">Ofuscación de código JavaScript[cite: 44].</p>
+            <span class="source-tag">Fuente 44</span>
+        </div>
+        <div class="card">
+            <a href="https://pythontutor.com/">Python Tutor</a>
+            [cite_start]<p class="desc">Visualización de ejecución de código[cite: 68].</p>
+            <span class="source-tag">Fuente 68</span>
+        </div>
+        <div class="card">
+            <a href="https://app.diagrams.net/">Diagrams.net</a>
+            [cite_start]<p class="desc">Herramienta de diagramas (Draw.io)[cite: 74].</p>
+            <span class="source-tag">Fuente 74</span>
+        </div>
+        <div class="card">
+            <a href="https://barcode.tec-it.com/en/DataMatrix">Barcode Generator</a>
+            [cite_start]<p class="desc">Generador de códigos DataMatrix y barras[cite: 45].</p>
+            <span class="source-tag">Fuente 45</span>
+        </div>
+        <div class="card">
+            <a href="https://ctf-writeup-builder.vercel.app/">CTF Writeup Builder</a>
+            [cite_start]<p class="desc">Creador de informes para retos CTF[cite: 36].</p>
+            <span class="source-tag">Fuente 36</span>
+        </div>
+    </div>
+
+    <div class="category-title">Google Dorking y Búsqueda</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://dorksearch.com/">DorkSearch</a>
+            [cite_start]<p class="desc">Buscador especializado en Google Dorks[cite: 62].</p>
+            <span class="source-tag">Fuente 62</span>
+        </div>
+        <div class="card">
+            <a href="https://poc.curiosidadesdehackers.com/dorks.html">PoC Dorks</a>
+            [cite_start]<p class="desc">Colección de dorks para pruebas de concepto[cite: 59].</p>
+            <span class="source-tag">Fuente 59</span>
+        </div>
+        <div class="card">
+            <a href="https://tusendadigital.com/googledorkinghelper/">Dorking Helper</a>
+            [cite_start]<p class="desc">Asistente para construcción de dorks[cite: 75].</p>
+            <span class="source-tag">Fuente 75</span>
+        </div>
+    </div>
+
+    <div class="category-title">Certificaciones y Academias</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://habock.com.bo/ejpt/login.php">eJPT Login</a>
+            [cite_start]<p class="desc">Portal de formación eJPT[cite: 2].</p>
+            <span class="source-tag">Fuente 2</span>
+        </div>
+        <div class="card">
+            <a href="https://aprobaya.academy/">Aprobaya Academy</a>
+            [cite_start]<p class="desc">Academia de ciberseguridad[cite: 3].</p>
+            <span class="source-tag">Fuente 3</span>
+        </div>
+        <div class="card">
+            <a href="https://rinku.tech/experiencia-ejptv2/">Experiencia eJPTv2</a>
+            [cite_start]<p class="desc">Blog sobre la certificación eJPTv2[cite: 33].</p>
+            <span class="source-tag">Fuente 33</span>
+        </div>
+        <div class="card">
+            <a href="https://labex.io/es/tutorials/category/kali">Laboratorios Kali</a>
+            [cite_start]<p class="desc">Tutoriales de Kali Linux en LabEx[cite: 43].</p>
+            <span class="source-tag">Fuente 43</span>
+        </div>
+        <div class="card">
+            <a href="https://github.com/appsecco/breaking-and-pwning-apps-and-servers-aws-azure-training">Training AWS/Azure</a>
+            [cite_start]<p class="desc">Formación en hacking cloud[cite: 52].</p>
+            <span class="source-tag">Fuente 52</span>
+        </div>
+    </div>
+
+    <div class="category-title">Blue Team y Defensa</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://zeronetworks.com/maturity-quiz">Maturity Quiz</a>
+            [cite_start]<p class="desc">Test de madurez de red[cite: 1].</p>
+            <span class="source-tag">Fuente 1</span>
+        </div>
+        <div class="card">
+            <a href="https://darkfeed.io/">DarkFeed</a>
+            [cite_start]<p class="desc">Inteligencia de amenazas[cite: 4].</p>
+            <span class="source-tag">Fuente 4</span>
+        </div>
+        <div class="card">
+            <a href="https://bazaar.abuse.ch/browse/">Malware Bazaar</a>
+            [cite_start]<p class="desc">Base de datos de muestras de malware[cite: 76].</p>
+            <span class="source-tag">Fuente 76</span>
+        </div>
+        <div class="card">
+            <a href="https://www.atomicredteam.io/atomic-red-team">Atomic Red Team</a>
+            [cite_start]<p class="desc">Pruebas de seguridad (Red Team)[cite: 63].</p>
+            <span class="source-tag">Fuente 63</span>
+        </div>
+        <div class="card">
+            <a href="https://soctoolkit.com/">SOC Toolkit</a>
+            [cite_start]<p class="desc">Herramientas para analistas SOC[cite: 60].</p>
+            <span class="source-tag">Fuente 60</span>
+        </div>
+    </div>
+
+    <div class="category-title">Documentación y Guías</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://www.amanhardikar.com/mindmaps/Practice.html">Mindmaps Practice</a>
+            [cite_start]<p class="desc">Mapas mentales de práctica[cite: 7].</p>
+            <span class="source-tag">Fuente 7</span>
+        </div>
+        <div class="card">
+            <a href="https://raeia.org/books/">RAEIA Books</a>
+            [cite_start]<p class="desc">Biblioteca de libros técnicos[cite: 15].</p>
+            <span class="source-tag">Fuente 15</span>
+        </div>
+        <div class="card">
+            <a href="https://ilanami.github.io/llaNami-ADGuide/">AD Guide</a>
+            [cite_start]<p class="desc">Guía de Active Directory[cite: 37].</p>
+            <span class="source-tag">Fuente 37</span>
+        </div>
+        <div class="card">
+            <a href="https://gist.github.com/s4vitar/b88fefd5d9fbbdcc5f30729f7e06826e">Gist S4vitar</a>
+            [cite_start]<p class="desc">Recursos de hacking de S4vitar[cite: 32].</p>
+            <span class="source-tag">Fuente 32</span>
+        </div>
+        <div class="card">
+            <a href="https://github.com/hummingbirdscyber/Vulnerable-Web-Application">Vulnerable Web App</a>
+            [cite_start]<p class="desc">Aplicación web para prácticas[cite: 42].</p>
+            <span class="source-tag">Fuente 42</span>
+        </div>
+    </div>
+
+    <div class="category-title">Varios y Utilidades Extra</div>
+    <div class="grid">
+        <div class="card">
+            <a href="https://www.maquinasvirtuales.eu/clonar-mando-de-garaje-con-flipper-zero/">Guía Flipper Zero</a>
+            [cite_start]<p class="desc">Tutorial para Flipper Zero[cite: 16].</p>
+            <span class="source-tag">Fuente 16</span>
+        </div>
+        <div class="card">
+            <a href="https://spiritadmins.com/tools/pizzahack">PizzaHack</a>
+            [cite_start]<p class="desc">Herramientas lúdicas[cite: 13].</p>
+            <span class="source-tag">Fuente 13</span>
+        </div>
+        <div class="card">
+            <a href="https://distrosea.com/es/">DistroSea</a>
+            [cite_start]<p class="desc">Simulador de sistemas operativos[cite: 22].</p>
+            <span class="source-tag">Fuente 22</span>
+        </div>
+        <div class="card">
+            <a href="https://www.turnkeylinux.org/">TurnKey Linux</a>
+            [cite_start]<p class="desc">Biblioteca de dispositivos virtuales[cite: 35].</p>
+            <span class="source-tag">Fuente 35</span>
+        </div>
+        <div class="card">
+            <a href="https://geomastr.com/">GeoMastr</a>
+            [cite_start]<p class="desc">Recurso de geolocalización[cite: 38].</p>
+            <span class="source-tag">Fuente 38</span>
+        </div>
+        <div class="card">
+            <a href="https://www.palentino.es/blog/%25F0%259F%2594%2590-wincve-explora-y-detecta-vulnerabilidades-cve-en-windows-todo-offline-portable-y-profesional/">WinCVE</a>
+            [cite_start]<p class="desc">Exploración de vulnerabilidades Windows[cite: 41].</p>
+            <span class="source-tag">Fuente 41</span>
+        </div>
+        <div class="card">
+            <a href="http://anonymouse.org/anonemail.html">AnonEmail</a>
+            [cite_start]<p class="desc">Envío de correos anónimos[cite: 51].</p>
+            <span class="source-tag">Fuente 51</span>
+        </div>
+        <div class="card">
+            <a href="https://www.lazesoft.com/lazesoft-recovery-suite-free.html">Lazesoft Recovery</a>
+            [cite_start]<p class="desc">Recuperación de sistemas y datos[cite: 55].</p>
+            <span class="source-tag">Fuente 55</span>
+        </div>
+        <div class="card">
+            <a href="https://incredible-strudel-c5dbf1.netlify.app/">Incredible Strudel</a>
+            [cite_start]<p class="desc">Recurso web (desafío/guía)[cite: 56].</p>
+            <span class="source-tag">Fuente 56</span>
+        </div>
+        <div class="card">
+            <a href="https://wikiflix.toolforge.org/#/">Wikiflix</a>
+            [cite_start]<p class="desc">Explorador de contenido wiki[cite: 57].</p>
+            <span class="source-tag">Fuente 57</span>
+        </div>
+        <div class="card">
+            <a href="https://bf.based.re/">Based.re</a>
+            [cite_start]<p class="desc">Recurso técnico/CTF[cite: 64].</p>
+            <span class="source-tag">Fuente 64</span>
+        </div>
+        <div class="card">
+            <a href="http://labs.gf0s.com/">GF0S Labs</a>
+            [cite_start]<p class="desc">Laboratorios experimentales[cite: 65].</p>
+            <span class="source-tag">Fuente 65</span>
+        </div>
+        <div class="card">
+            <a href="https://grapheneos.org/">GrapheneOS</a>
+            [cite_start]<p class="desc">Sistema operativo móvil enfocado en privacidad[cite: 69].</p>
+            <span class="source-tag">Fuente 69</span>
+        </div>
+        <div class="card">
+            <a href="https://storage.iamsjy.com/">Storage SJY</a>
+            [cite_start]<p class="desc">Almacenamiento/Recursos externos[cite: 70].</p>
+            <span class="source-tag">Fuente 70</span>
+        </div>
+        <div class="card">
+            <a href="https://saferlayer.com/">SaferLayer</a>
+            [cite_start]<p class="desc">Seguridad y capas de protección[cite: 71].</p>
+            <span class="source-tag">Fuente 71</span>
+        </div>
+        <div class="card">
+            <a href="https://luvvoice.com/es">LuvVoice</a>
+            [cite_start]<p class="desc">Herramienta de voz/texto[cite: 72].</p>
+            <span class="source-tag">Fuente 72</span>
+        </div>
+        <div class="card">
+            <a href="https://wasec.netlify.app/">Wasec</a>
+            [cite_start]<p class="desc">Analizador de seguridad web[cite: 20].</p>
+            <span class="source-tag">Fuente 20</span>
+        </div>
+        <div class="card">
+            <a href="https://biblio-ia-4221775b.base44.app/">Biblio IA</a>
+            [cite_start]<p class="desc">Biblioteca de inteligencia artificial[cite: 77].</p>
+            <span class="source-tag">Fuente 77</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
