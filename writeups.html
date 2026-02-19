@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Repository | Terminal Access</title>
+    <style>
+        :root {
+            --neon-green: #00ff41;
+            --dark-bg: #0a0a0a;
+            --terminal-gray: #1a1a1a;
+            --shadow-green: rgba(0, 255, 65, 0.2);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--neon-green);
+            font-family: 'Courier New', Courier, monospace;
+            padding: 30px;
+            margin: 0;
+        }
+
+        .terminal-window {
+            border: 1px solid var(--neon-green);
+            box-shadow: 0 0 20px var(--shadow-green);
+            background: var(--terminal-gray);
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--neon-green);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+        }
+
+        .prompt-line {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .user { color: #fff; }
+        .dir { color: #5dade2; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+
+        th {
+            text-align: left;
+            border-bottom: 1px dashed var(--neon-green);
+            padding: 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(0, 255, 65, 0.05);
+        }
+
+        tr:hover {
+            background-color: rgba(0, 255, 65, 0.1);
+        }
+
+        a {
+            color: var(--neon-green);
+            text-decoration: none;
+            display: block;
+        }
+
+        a:hover {
+            text-shadow: 0 0 10px var(--neon-green);
+            color: #fff;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: var(--neon-green);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 255, 65, 0.03);
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<div class="terminal-window">
+    <header>
+        <div class="prompt-line">
+            <span class="user">guest@pwn-box</span>:<span class="dir">~/Documents/Writeups</span>$ ls -la --sort=name
+        </div>
+        <div style="color: #888;">[INFO] Listing directory contents... <span class="cursor"></span></div>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mode</th>
+                <th>LastWriteTime</th>
+                <th>Length</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>-a---l</td>
+                <td>14/01/2026 16:04</td>
+                <td>13608445</td>
+                <td><a href="Writeups/01 CTF_Borazuwarah_Cero_a_Root.pdf" target="_blank">01 CTF_Borazuwarah_Cero_a_Root.pdf</a></td>
+            </tr>
+            <tr>
+                <td>-a---l</td>
+                <td>16/12/2025 17:53</td>
+                <td>955751</td>
+                <td><a href="Writeups/02 BorazuwarahCTF.pdf" target="_blank">02 BorazuwarahCTF.pdf</a></td>
+            </tr>
+            <tr>
+                <td>-a---l</td>
+                <td>16/01/2026 18:29</td>
+                <td>13959903</td>
+                <td><a href="Writeups/03 CTF_Obsession_Crónica_de_Infiltración_Digital.pdf" target="_blank">03 CTF_Obsession_Crónica_de_Infiltración_Digital.pdf</a></td>
+            </tr>
+            <tr>
+                <td>-a---l</td>
+                <td>16/12/2025 17:54</td>
+                <td>1091964</td>
+                <td><a href="Writeups/04 Obsession.pdf" target="_blank">04 Obsession.pdf</a></td>
+            </tr>
+            <tr>
+                <td>-a---l</td>
+                <td>16/12/2025 17:55</td>
+                <td>694490</td>
+                <td><a href="Writeups/05 Vacaciones.pdf" target="_blank">05 Vacaciones.pdf</a></td>
+            </tr>
+            <tr>
+                <td>-a---l</td>
+                <td>16/01/2026 18:18</td>
+                <td>14217847</td>
+                <td><a href="Writeups/06 CTF_La_Conquista_de_Vacaciones.pdf" target="_blank">06 CTF_La_Conquista_de_Vacaciones.pdf</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
